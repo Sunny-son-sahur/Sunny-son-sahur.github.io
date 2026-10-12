@@ -1,7 +1,7 @@
 /* site-base.js — deployment base-path resolver.
  *
- * The same build has to run at a domain root (user site) or under a
- * project-site subpath (/simplegames-lol.github.io/). Every page that loads
+ * Resolves where this build is actually mounted. Works at a domain root
+ * (user site) or under a project-site subpath. Every page that loads
  * a path-keyed script also loads this file with a depth-relative src, so this
  * script's own URL always resolves to the site root.
  *
