@@ -1,0 +1,1 @@
+export function plainAnswer(text){return String(text).replace(/^#{1,6}\s+/gm,'').replace(/\*\*([^*]+)\*\*/g,'$1').replace(/\*([^*\n]+)\*/g,'$1').replace(/^\s*\*\s+/gm,'• ').replace(/```[^\n]*\n?([\s\S]*?)```/g,'$1').replace(/`([^`]+)`/g,'$1')}

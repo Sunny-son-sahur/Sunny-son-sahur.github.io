@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Blocky Snakes</title>
+<style>html,body,.webgl-content,#gameContainer{margin:0;width:100%;height:100%;overflow:hidden;background:#000}canvas{width:100%!important;height:100%!important}#error{position:fixed;inset:20px;color:white;font:16px sans-serif;pointer-events:none}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/malpig/HTML-Games-V2@c80f20e7b02c5a026c9fede3366477ff7efa628c/blocky-snakes/style/style.css">
+<script src="https://cdn.jsdelivr.net/gh/malpig/HTML-Games-V2@c80f20e7b02c5a026c9fede3366477ff7efa628c/blocky-snakes/UnityProgress.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/malpig/HTML-Games-V2@c80f20e7b02c5a026c9fede3366477ff7efa628c/blocky-snakes/UnityLoader.js"></script></head>
+<body><div class="webgl-content"><div id="gameContainer"></div></div><p id="error" hidden></p><script>
+window.open=()=>null;
+var gameInstance;
+function ShowAds(){gameInstance?.SendMessage('AdsManager','onAdServed');document.querySelector('canvas')?.focus()}
+try{gameInstance=UnityLoader.instantiate('gameContainer','https://cdn.jsdelivr.net/gh/malpig/HTML-Games-V2@c80f20e7b02c5a026c9fede3366477ff7efa628c/blocky-snakes/build.json',{onProgress:UnityProgress})}catch(error){const note=document.querySelector('#error');note.hidden=false;note.textContent='Game could not load. Please refresh and try again.'}
+</script></body></html>

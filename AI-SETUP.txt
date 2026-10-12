@@ -1,0 +1,13 @@
+SIMPLE AI SETUP
+
+Simple AI is a real general-purpose Gemini chat powered by Firebase AI Logic.
+
+1. Open Firebase Console and select simplegames-23c2c.
+2. Open AI Services > AI Logic.
+3. Click Get started.
+4. Choose Gemini Developer API (free tier available).
+5. Complete the guided setup.
+6. Open Security > App Check and register the web app with a production provider.
+7. Make sure Firebase AI Logic is enforced under App Check APIs before publishing the site.
+
+The website uses Firebase AI Logic so a Gemini API key is not placed in the public GitHub Pages source.

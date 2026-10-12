@@ -1,0 +1,56 @@
+.server-channel-edit {
+  appearance: none; background: #000; color: var(--text, #fff);
+  border: 1px solid #30343b; border-radius: 8px;
+  width: 32px; min-height: 32px; padding: 6px;
+  font: inherit; cursor: pointer;
+}
+.server-channel-edit:hover { background: #111; border-color: #50555e; }
+.server-channel-edit:focus-visible { outline: 2px solid var(--accent, #55b3ff); outline-offset: 2px; }
+.server-profile-editor textarea {
+  width: 100%; box-sizing: border-box; min-height: 90px; resize: vertical;
+  padding: 12px; border: 1px solid #30343b; border-radius: 10px;
+  background: #090a0c; color: var(--text, #fff); font: inherit;
+}
+.server-dialog-card.channel-editor {
+  width: min(620px, calc(100vw - 32px)); box-sizing: border-box;
+  padding: 24px; gap: 18px; max-height: calc(100dvh - 48px); overflow-y: auto;
+}
+.channel-editor h3 { margin: 0; }
+.channel-editor .editor-check, .channel-editor .channel-command-settings label {
+  display: flex; flex-direction: row; align-items: center; justify-content: flex-start;
+  gap: 10px; margin: 0; padding: 8px 0; font-weight: normal;
+}
+.channel-editor input[type="checkbox"] {
+  width: 17px; height: 17px; min-height: 0; flex: 0 0 17px;
+  margin: 0; padding: 0; accent-color: var(--accent, #55b3ff);
+}
+.channel-editor .editor-section {
+  padding: 14px; border: 1px solid #30343b; border-radius: 10px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.channel-editor .editor-section[hidden] { display: none; }
+.channel-editor .editor-section h4, .channel-editor p { margin: 0; }
+.channel-editor .editor-section h4 { order: -1; }
+.channel-editor .editor-hint { color: #969da9; font-size: 12px; line-height: 1.5; }
+.channel-editor details { border: 1px solid #30343b; border-radius: 8px; padding: 10px; }
+.channel-editor summary { cursor: pointer; font-weight: bold; }
+.channel-editor .editor-options { max-height: 200px; overflow-y: auto; margin-top: 8px; }
+.channel-editor .editor-actions {
+  display: flex; flex-wrap: wrap; gap: 8px; position: sticky; bottom: -24px;
+  background: var(--surface, #0d1015); padding: 14px 0; border-top: 1px solid #30343b;
+}
+.channel-editor .editor-actions button { flex: 1; }
+.channel-editor .channel-command-settings { margin: 0; min-width: 0; }
+.channel-editor .channel-command-settings {
+  border: 0; padding: 0; display: flex; flex-direction: column; gap: 10px;
+}
+.channel-editor > details[open] > summary { margin-bottom: 16px; }
+.channel-editor .channel-command-settings > .editor-hint { margin-bottom: 4px; }
+.channel-editor .channel-command-settings details { padding: 12px 14px; }
+.channel-editor .channel-command-settings summary { line-height: 1.5; }
+.channel-editor .channel-command-settings summary small {
+  display: block; margin: 3px 0 0 16px; color: #969da9; font-size: 12px; font-weight: normal;
+}
+.channel-editor .channel-command-settings details[open] > summary { margin-bottom: 10px; }
+.channel-editor .channel-command-settings label { border-top: 1px solid #23262c; padding: 10px 0; }
+.channel-editor input:not([type="checkbox"]), .channel-editor select { width: 100%; box-sizing: border-box; }

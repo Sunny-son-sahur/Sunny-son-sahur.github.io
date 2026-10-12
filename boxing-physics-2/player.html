@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Boxing Physics 2</title><base href="https://deepakrummy.github.io/games/boxingphysics2/"><style>html,body,#game{margin:0;width:100%;height:100%;background:#000;overflow:hidden}#progress{position:fixed;inset:20px;color:white;font:18px sans-serif;pointer-events:none}</style><script src="Build/UnityLoader.js"></script></head><body><div id="game"></div><p id="progress">Loading…</p><script>
+window.open=()=>null;
+window.initPokiBridge=function(bridge){window.unityGame.SendMessage(bridge,'ready');window.commercialBreak=()=>window.unityGame.SendMessage(bridge,'commercialBreakCompleted');window.rewardedBreak=()=>window.unityGame.SendMessage(bridge,'rewardedBreakCompleted','false')};
+function getTheSrvrTm(){window.unityGame.SendMessage('_GameController','UpdateTime',new Date().toUTCString())}
+window.unityGame=UnityLoader.instantiate('game','Build/Boxing-Physics-2.json',{onProgress:(game,progress)=>{const label=document.querySelector('#progress');label.textContent='Loading… '+Math.round(progress*100)+'%';if(progress===1)label.hidden=true}});
+</script></body></html>

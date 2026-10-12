@@ -1,0 +1,22 @@
+Interface and notifications update
+
+Features 4, 5, 7, 8, 10, 12 and 13: selectable click sounds with preview,
+rotating homepage typing messages, notification settings, animated tab title
+and cat favicon, collapsible sidebar, Friends/Servers unread badges, and
+top-left message cards with quick replies.
+
+Feature 6: existing server channel editing, role access, message editing,
+deleting, lock/unlock and owner-only kick/ban/unban are included. Role
+permissions now also control editing/deleting your own messages.
+
+Publish the complete firestore.rules file in Firebase Console > Firestore >
+Rules to enforce the new own-message role permissions. Do not append it to
+the old rules. No Firebase or website deployment was performed here.
+
+Unread server counts are saved per account on this browser. New server
+messages are tracked while the website is open; this is not offline push.
+Tab favicon animation depends on browser support. Reduced Motion disables
+typing/spinning. Sound playback starts after a user interaction.
+
+JavaScript syntax checked. Multi-account notification delivery, replies,
+and Firebase rule enforcement still need live testing.

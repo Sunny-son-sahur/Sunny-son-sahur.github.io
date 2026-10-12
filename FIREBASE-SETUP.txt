@@ -1,0 +1,66 @@
+FINAL FIREBASE STEP
+
+1. Open Firebase Console > Firestore Database > Rules.
+2. Delete the existing rules shown in the editor.
+3. Copy everything from firestore.rules into the editor.
+4. Click Publish.
+
+The account and messaging system will remain locked until these rules are published.
+Never use test mode rules for the public website.
+
+The system includes:
+- Email/password authentication
+- Unique public usernames (3-20 characters)
+- Passwords of at least 6 characters
+- Friend requests
+- Private real-time chat between friends
+- Blocking and reporting
+- Forgot-password emails and password changes
+- Unread message counters
+- Online and last-active status
+- Custom display names, emoji avatars, and bios
+- Friend game activity
+- Friend profile cards
+- Typing indicators and read receipts
+- Do Not Disturb and activity privacy
+- Public game ratings
+- Playtime and achievements
+- Cloud-synced appearance settings (very large background images stay on each device)
+- Optional message notification sounds
+- Removing friends and deleting your own messages
+- Username changes with a 30-day cooldown
+- Earned profile badges
+- Most-played and top-rated sorting
+- Game loading timeouts with retry controls
+- Searchable and pinnable conversations
+- Direct profile links using ?user=username
+- Emoji message reactions
+- Custom profile status text
+- Private group chats for up to 8 members
+- Group owner controls for renaming and member management
+- Group unread badges and notification sounds
+- Message editing and quoted replies
+- PNG, JPEG, WebP, and GIF sharing capped at 180 KB
+- Uploaded profile pictures resized to 256x256 (no emoji avatar field)
+- Account-only playtime leaderboard
+- Achievements marked as coming soon while minutes played remain visible
+- Display names can be changed once every 24 hours
+- Removed the old achievement emoji badges from usernames
+
+IMPORTANT: Publish the included firestore.rules again for ratings, message deletion,
+username changes, reactions, group management, replies, edits, and attachments to work.
+The newest rules also enforce the profile-picture size limit.
+
+Friend-request fix: the block check now permits signed-in reads so a missing
+block record returns "not found" instead of "insufficient permissions."
+The friendship check also permits signed-in single-document reads so a missing
+friendship returns "not found" instead of the same permissions error.
+
+Live-chat fix: direct-message listeners now use the friendship record as their
+permission source, including before the first message creates a chat summary.
+
+Legacy-account compatibility: user updates are split by feature so old accounts
+can use profile pictures, profiles, presence, privacy settings, pinned chats,
+cloud preferences, playtime, and username changes without missing-field errors.
+
+Firebase Authentication stores passwords securely. The website never stores raw passwords.

@@ -1,0 +1,9 @@
+export function installRingtone(container,settings){
+  let context,timer,muted=false;const enabled=document.createElement('input');enabled.type='checkbox';enabled.checked=localStorage.getItem('sg-call-ringtone')!=='off';const label=document.createElement('label');label.append(enabled,' Incoming call ringtone');const preview=document.createElement('button');preview.type='button';preview.className='secondary-button';preview.textContent='Preview ringtone';settings?.append(label,preview);
+  async function unlock(){try{context??=new(window.AudioContext||window.webkitAudioContext)();await context.resume();}catch{}}
+  function tone(){if(!context||context.state!=='running'||muted||!enabled.checked)return;for(const offset of [0,.35]){const oscillator=context.createOscillator(),gain=context.createGain(),time=context.currentTime+offset;oscillator.type='sine';oscillator.frequency.value=660;gain.gain.setValueAtTime(0,time);gain.gain.linearRampToValueAtTime(.09,time+.025);gain.gain.exponentialRampToValueAtTime(.001,time+.23);oscillator.connect(gain);gain.connect(context.destination);oscillator.start(time);oscillator.stop(time+.25);}}
+  function sync(){const ringing=container.children.length>0&&!muted&&enabled.checked;if(ringing&&!timer){tone();timer=setInterval(tone,3000)}else if(!ringing&&timer){clearInterval(timer);timer=null;}}
+  document.addEventListener('pointerdown',()=>void unlock().then(sync));document.addEventListener('keydown',()=>void unlock().then(sync));
+  document.addEventListener('simplegames:profile',event=>{muted=event.detail.profile?.doNotDisturb===true;sync();});
+  enabled.onchange=()=>{localStorage.setItem('sg-call-ringtone',enabled.checked?'on':'off');sync();};preview.onclick=async()=>{await unlock();tone();};new MutationObserver(sync).observe(container,{childList:true});window.addEventListener('pagehide',()=>clearInterval(timer));
+}

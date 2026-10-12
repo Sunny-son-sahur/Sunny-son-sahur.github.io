@@ -1,0 +1,21 @@
+/* Full-page account hub, retaining the site's black background and font. */
+.social-panel:has(#social-view:not([hidden])){padding:0;place-items:stretch;background:#000}
+.social-panel:has(#social-view:not([hidden])) .social-card{box-sizing:border-box;width:100%;max-height:100dvh;min-height:100dvh;border:0;border-radius:0;padding:28px max(20px,calc((100vw - 1100px)/2));box-shadow:none;backdrop-filter:none}
+.social-panel .social-layout{display:block}
+.social-panel .social-sidebar{padding:0;border:0}
+.social-panel .chat-area{display:none}
+.social-panel.friends-chat-open .social-sidebar{display:none}
+.social-panel.friends-chat-open .chat-area{display:block}
+.friends-toolbar{margin:20px 0;display:flex;align-items:center;gap:12px}
+.friends-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.friends-tabs button{font:inherit;color:inherit;background:#000;border:1px solid #272a30;border-radius:8px;padding:9px 15px;cursor:pointer}
+.friends-tabs button[aria-pressed=true]{background:var(--accent,#173f6d);border-color:var(--accent,#173f6d)}
+.friend-filter-label{display:block;max-width:480px;margin:0 0 18px}
+#friend-list .social-list-item{display:flex;align-items:center;gap:10px;padding:14px 10px;border:0;border-bottom:1px solid #23252b;border-radius:0;background:transparent}
+#friend-list .social-list-item>span:empty{display:none}
+#friend-list .friend-button{flex:1;min-width:0;background:transparent;border:0;padding:0}
+.friend-copy{min-width:0}.friend-copy strong,.friend-copy small{overflow-wrap:anywhere}
+.friends-chat-back{margin-bottom:16px}
+.social-panel .message-list{height:calc(100dvh - 340px);min-height:220px}
+.friends-tabs button:focus-visible{outline:2px solid var(--accent,#173f6d);outline-offset:3px}
+@media(max-width:600px){.social-panel:has(#social-view:not([hidden])) .social-card{padding:16px}.friends-tabs button{padding:8px 10px}#friend-list .social-list-item{flex-wrap:wrap}#friend-list .friend-button{flex-basis:100%}.social-panel .profile-row{align-items:flex-start}.social-panel .message-list{height:45dvh}}

@@ -1,0 +1,17 @@
+.server-layout { min-height:0; height:calc(100dvh - 76px); }
+.server-chat-heading,.server-message-form { flex-shrink:0; }
+.server-message-form input:disabled { opacity:.6;cursor:not-allowed; }
+#server-my-open { display:none!important; }
+.server-list button { display:flex;align-items:center;gap:8px; }.server-list-icon{width:28px;height:28px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;background:var(--accent)}
+.game-overlay { position:fixed!important;inset:0!important;z-index:600;width:100vw!important;height:100dvh!important; }
+body.game-is-open { overflow:hidden; }
+body.game-is-open>.page-shell { visibility:hidden; }
+.sports-panel,.movies-panel { height:100dvh;overflow:hidden;isolation:isolate; }
+.sports-frame,.movies-frame { display:block;flex:1 1 0!important;height:0;contain:layout size; }
+.sports-note,.movies-note { box-sizing:border-box;min-height:34px;flex-shrink:0; }
+.leaderboard-podium { display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:12px;align-items:end;margin:20px 0; }
+.podium-card { display:flex;flex-direction:column;align-items:center;gap:8px;border:1px solid var(--border);border-radius:12px;padding:14px 8px;background:#000;text-align:center;min-width:0; }
+.podium-card strong { overflow-wrap:anywhere; }.podium-first{min-height:190px;border-color:var(--accent)}.podium-second{min-height:155px}.podium-third{min-height:130px}
+.podium-card .profile-avatar{width:42px;height:42px}.podium-first .profile-avatar{width:54px;height:54px}
+.rating-voters { display:grid;gap:10px;margin-top:16px;max-height:55dvh;overflow:auto; }.rating-voter{display:flex;gap:10px;align-items:center}.rating-voter strong{flex:1}.rating-count{border:0;background:transparent;color:var(--muted);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:650px){.server-layout{height:calc(100dvh - 64px)}.leaderboard-podium{gap:6px}.podium-card{font-size:11px}}
