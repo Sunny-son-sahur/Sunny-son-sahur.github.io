@@ -420,6 +420,19 @@ def resolve_covers(rows):
     print(f"  covers: {have}/{len(rows)} real")
 
 
+def prune_covers(rows):
+    """Delete cover files no row points at. Dedupe runs after a cover is mirrored,
+    so a dropped game would otherwise leave its image in the repo forever."""
+    wanted = {r["cover"].rsplit("/", 1)[-1]
+              for r in rows
+              if r["cover"] and not r["cover"].startswith("http")}
+    orphans = [p for p in COVERS.iterdir() if p.is_file() and p.name not in wanted]
+    for p in orphans:
+        p.unlink()
+    if orphans:
+        print(f"  pruned {len(orphans)} orphaned cover files")
+
+
 # ------------------------------------------------------------------- build
 def drop_dead(rows):
     """Remove anything tools/check-urls.py found not to load. A card that opens
@@ -521,6 +534,7 @@ def main():
     rows = drop_dead(rows)
 
     resolve_covers(rows)
+    prune_covers(rows)
 
     data = [[r["name"], r["path"], r["url"], r["category"], r["source"],
              r["cover"] or ""] for r in rows]
