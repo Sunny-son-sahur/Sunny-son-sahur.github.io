@@ -96,6 +96,10 @@ const categories = {
 
 const newGames = new Set(window.simpleGamesRelease?.newGames || []);
 
+// Games from games-catalog.js carry their own category; without this merge
+// every one of them would fall through to the "action" default below.
+Object.assign(categories, window.__catalogCategories || {});
+
 cards.forEach((card) => {
   const link = card.querySelector("a[href]");
   const path = sitePath(link.href);

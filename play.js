@@ -88,6 +88,10 @@ const games = {
   "/retro-bowl/": "https://unblokedgames.github.io/projects/retro-bowl/index.html"
 };
 
+// 3134 overlay targets published by games-catalog.js. Assigned rather than
+// declared so the shipped map stays readable and the catalog stays generated.
+Object.assign(games, window.__catalogGames || {});
+
 const overlay = document.querySelector("#game-overlay");
 const player = document.querySelector("#game-player");
 document.querySelector('#game-fullscreen')?.addEventListener('click', async () => {
