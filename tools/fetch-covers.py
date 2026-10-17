@@ -112,6 +112,30 @@ def fetch(url, headers=None, timeout=30, tries=3, binary=True):
 
 
 # ------------------------------------------------------------------ sources
+# Steam's library art only exists for apps that have it published; a third of
+# app IDs 404 on library_600x900 and some delisted apps have no asset at all.
+# Probing costs one request for a real match, and turning a total miss into
+# None sends the title to the image search instead of shipping a broken URL.
+STEAM_ASSETS = ("library_600x900.jpg", "library_600x900_2x.jpg",
+                "header.jpg", "capsule_616x353.jpg")
+
+
+def steam_asset(app):
+    """First Steam art URL for this app that actually serves an image."""
+    for name in STEAM_ASSETS:
+        url = f"https://cdn.akamai.steamstatic.com/steam/apps/{app}/{name}"
+        head = {"User-Agent": BROWSER["User-Agent"], "Range": "bytes=0-64"}
+        try:
+            req = urllib.request.Request(url, headers=head, method="HEAD")
+            with urllib.request.urlopen(req, timeout=20) as r:
+                if r.status in (200, 206) and "image" in (
+                        r.headers.get("Content-Type") or ""):
+                    return url
+        except Exception:
+            continue
+    return None
+
+
 def steam_cover(title):
     q = urllib.parse.urlencode({"term": title, "l": "english", "cc": "US"})
     try:
@@ -128,10 +152,10 @@ def steam_cover(title):
             app = item.get("id")
             if not app:
                 continue
-            return {"kind": "hot",
-                    "url": f"https://cdn.akamai.steamstatic.com/steam/apps/"
-                           f"{app}/library_600x900.jpg",
-                    "from": "steam"}
+            url = steam_asset(app)
+            if url:
+                return {"kind": "hot", "url": url, "from": "steam"}
+            return None          # matched an app with no art: not a real hit
     return None
 
 

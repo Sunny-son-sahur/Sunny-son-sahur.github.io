@@ -518,20 +518,22 @@ def resolve_covers(rows):
     mirrored = hot = 0
     todo = []
     for r in rows:
-        if r["cover"]:
-            mirrored += 1                       # wasm.rip art
-            continue
         entry = cmap.get(r["slug"]) or {}
-        if entry.get("kind") in ("local", "cache") and entry.get("file"):
-            # only trust the entry if the bytes are actually on disk - a stale
-            # map entry would otherwise ship a cover path that 404s
-            if (ROOT / entry["file"]).exists():
-                r["cover"] = entry["file"]
-                mirrored += 1
-                continue
-        elif entry.get("kind") == "hot" and entry.get("url"):
+        # A local file we downloaded and verified beats any URL the source
+        # handed us: a remote art link that has since rotted still looks like a
+        # cover in the map, and only the bytes on disk can be trusted without a
+        # network round trip.
+        if entry.get("kind") in ("local", "cache") and entry.get("file") \
+                and (ROOT / entry["file"]).exists():
+            r["cover"] = entry["file"]
+            mirrored += 1
+            continue
+        if entry.get("kind") == "hot" and entry.get("url"):
             r["cover"] = entry["url"]
             hot += 1
+            continue
+        if r["cover"]:
+            mirrored += 1                       # art shipped by the source
             continue
         if r.get("repo"):
             # only worth mirroring when nothing better resolved for it

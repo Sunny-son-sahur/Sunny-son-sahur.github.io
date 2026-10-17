@@ -45,9 +45,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1417690/library_600x900.jpg"
 },
 "13bones": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4417710/library_600x900.jpg"
+"file": "assets/covers/13bones.webp",
+"from": "bing",
+"kind": "local",
+"score": 70
 },
 "2-3-4-player-games": {
 "file": "assets/covers/2-3-4-player-games.webp",
@@ -175,9 +176,10 @@
 "kind": "local"
 },
 "8-ball-pool": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4501430/library_600x900.jpg"
+"file": "assets/covers/8-ball-pool.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "90in1nes": {
 "file": "assets/covers/90in1nes.webp",
@@ -230,9 +232,10 @@
 "kind": "local"
 },
 "abandoned": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5080530/library_600x900.jpg"
+"file": "assets/covers/abandoned.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "abandoned3": {
 "file": "assets/covers/abandoned3.webp",
@@ -585,9 +588,10 @@
 "kind": "local"
 },
 "apple-worm": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5189530/library_600x900.jpg"
+"file": "assets/covers/apple-worm.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "aquapark-io": {
 "file": "assets/covers/aquapark-io.webp",
@@ -620,9 +624,10 @@
 "kind": "local"
 },
 "as-duty-demands": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4274860/library_600x900.jpg"
+"file": "assets/covers/as-duty-demands.webp",
+"from": "bing",
+"kind": "local",
+"score": 75
 },
 "ascent": {
 "file": "assets/covers/ascent.webp",
@@ -662,7 +667,7 @@
 "avalanche": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/351250/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/351250/header.jpg"
 },
 "aviamasters": {
 "file": "assets/covers/aviamasters.webp",
@@ -699,12 +704,6 @@
 "from": "cache",
 "kind": "local"
 },
-"azahar": {
-"file": "assets/covers/azahar.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
-},
 "b3313-unabandoned-a2": {
 "file": "assets/covers/b3313-unabandoned-a2.webp",
 "from": "cache",
@@ -723,7 +722,7 @@
 "babel-tower": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/441230/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/441230/header.jpg"
 },
 "baby-chicco-adventure": {
 "file": "assets/covers/baby-chicco-adventure.webp",
@@ -746,9 +745,10 @@
 "kind": "local"
 },
 "backyard-baseball": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3935020/library_600x900.jpg"
+"file": "assets/covers/backyard-baseball.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "backyard-baseball-09": {
 "file": "assets/covers/backyard-baseball-09.webp",
@@ -825,12 +825,6 @@
 "kind": "hot",
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2379780/library_600x900.jpg"
 },
-"baldi-s-basics-birthday-bash": {
-"file": "assets/covers/baldi-s-basics-birthday-bash.webp",
-"from": "bing",
-"kind": "local",
-"score": 75
-},
 "baldi-s-basics-remastered": {
 "file": "assets/covers/baldi-s-basics-remastered.webp",
 "from": "cache",
@@ -852,9 +846,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1275890/library_600x900.jpg"
 },
 "ball-blast": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3678910/library_600x900.jpg"
+"file": "assets/covers/ball-blast.webp",
+"from": "bing",
+"kind": "local",
+"score": 70
 },
 "ballistic": {
 "from": "steam",
@@ -894,7 +889,7 @@
 "bank-robbery": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/2332270/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/2332270/header.jpg"
 },
 "bank-robbery-2": {
 "file": "assets/covers/bank-robbery-2.webp",
@@ -914,7 +909,7 @@
 "barry-has-a-secret": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/864230/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/864230/header.jpg"
 },
 "bart-blast-made-by-epick": {
 "file": "assets/covers/bart-blast-made-by-epick.webp",
@@ -928,7 +923,7 @@
 },
 "baseball-doodle": {
 "file": "assets/covers/baseball-doodle.webp",
-"from": "official",
+"from": "cache",
 "kind": "local"
 },
 "basket-battle": {
@@ -1139,7 +1134,7 @@
 "binding-of-isaac-wrath-of-the-lamb": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/113204/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/113204/header.jpg"
 },
 "binding-of-isaac-wrath-of-the-lamb-eternal-edition": {
 "file": "assets/covers/binding-of-isaac-wrath-of-the-lamb-eternal-edition.webp",
@@ -1167,9 +1162,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1368640/library_600x900.jpg"
 },
 "blackjack": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3594780/library_600x900.jpg"
+"file": "assets/covers/blackjack.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "blackjack-battle": {
 "file": "assets/covers/blackjack-battle.webp",
@@ -1197,9 +1193,10 @@
 "kind": "local"
 },
 "blightborne": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4151910/library_600x900.jpg"
+"file": "assets/covers/blightborne.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "blob-s-story-2": {
 "file": "assets/covers/blob-s-story-2.webp",
@@ -1207,9 +1204,10 @@
 "kind": "local"
 },
 "block-blast": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3907020/library_600x900.jpg"
+"file": "assets/covers/block-blast.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "block-blast-2": {
 "file": "assets/covers/block-blast-2.webp",
@@ -1242,9 +1240,10 @@
 "kind": "local"
 },
 "bloodmoney": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5044390/library_600x900.jpg"
+"file": "assets/covers/bloodmoney.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "bloons": {
 "from": "steam",
@@ -1346,12 +1345,6 @@
 "kind": "hot",
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1847510/library_600x900.jpg"
 },
-"boil-noodles-at-night": {
-"file": "assets/covers/boil-noodles-at-night.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
-},
 "bollybeat": {
 "file": "assets/covers/bollybeat.webp",
 "from": "cache",
@@ -1383,9 +1376,10 @@
 "kind": "local"
 },
 "bonkers": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4114320/library_600x900.jpg"
+"file": "assets/covers/bonkers.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "boom-slingers": {
 "from": "steam",
@@ -1393,9 +1387,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2075050/library_600x900.jpg"
 },
 "bottle-cracks": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3982830/library_600x900.jpg"
+"file": "assets/covers/bottle-cracks.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "bottleflip3d": {
 "file": "assets/covers/bottleflip3d.webp",
@@ -1408,9 +1403,10 @@
 "kind": "local"
 },
 "bouncemasters": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4126460/library_600x900.jpg"
+"file": "assets/covers/bouncemasters.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "bouncy-motors": {
 "from": "steam",
@@ -1459,7 +1455,7 @@
 },
 "brain-test-tricky-puzzles": {
 "file": "assets/covers/brain-test-tricky-puzzles.webp",
-"from": "official",
+"from": "cache",
 "kind": "local"
 },
 "brawlstars": {
@@ -1483,17 +1479,13 @@
 "kind": "local"
 },
 "bridge-race": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3645460/library_600x900.jpg"
+"file": "assets/covers/bridge-race.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "brotato": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4498220/library_600x900.jpg"
-},
-"brotato-paws-n-claws": {
-"file": "assets/covers/brotato-paws-n-claws.webp",
+"file": "assets/covers/brotato.webp",
 "from": "bing",
 "kind": "local",
 "score": 75
@@ -1574,9 +1566,10 @@
 "kind": "local"
 },
 "bulletforce": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3624370/library_600x900.jpg"
+"file": "assets/covers/bulletforce.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "bunnyland": {
 "file": "assets/covers/bunnyland.webp",
@@ -1754,9 +1747,10 @@
 "kind": "local"
 },
 "castaway": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5168140/library_600x900.jpg"
+"file": "assets/covers/castaway.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "castle-wars-modern": {
 "file": "assets/covers/castle-wars-modern.webp",
@@ -1764,9 +1758,10 @@
 "kind": "local"
 },
 "castlevania": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4231820/library_600x900.jpg"
+"file": "assets/covers/castlevania.webp",
+"from": "bing",
+"kind": "local",
+"score": 75
 },
 "castlevania-2": {
 "file": "assets/covers/castlevania-2.webp",
@@ -1893,11 +1888,6 @@
 "from": "cache",
 "kind": "local"
 },
-"cheese-rolling": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3809440/library_600x900.jpg"
-},
 "cheshire-in-a-chatroom": {
 "file": "assets/covers/cheshire-in-a-chatroom.webp",
 "from": "cache",
@@ -1909,9 +1899,10 @@
 "kind": "local"
 },
 "chibi-knight": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4299210/library_600x900.jpg"
+"file": "assets/covers/chibi-knight.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "chicken-cs": {
 "file": "assets/covers/chicken-cs.webp",
@@ -1956,7 +1947,7 @@
 "chuzzle": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3310/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/3310/header.jpg"
 },
 "circlo-o": {
 "from": "steam",
@@ -1970,9 +1961,8 @@
 },
 "civiballs": {
 "file": "assets/covers/civiballs.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
+"from": "cache",
+"kind": "local"
 },
 "civiballs-2": {
 "file": "assets/covers/civiballs-2.webp",
@@ -2112,7 +2102,7 @@
 "command-and-conquer-red-alert": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/24710/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/24710/header.jpg"
 },
 "command-and-conquer-tiberian-dawn": {
 "file": "assets/covers/command-and-conquer-tiberian-dawn.webp",
@@ -2261,9 +2251,8 @@
 },
 "cover-orange-players-pack-3": {
 "file": "assets/covers/cover-orange-players-pack-3.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
+"from": "cache",
+"kind": "local"
 },
 "coverorangeplayerspack3-1": {
 "file": "assets/covers/coverorangeplayerspack3-1.webp",
@@ -2305,15 +2294,10 @@
 "from": "cache",
 "kind": "local"
 },
-"crashout-crew": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3583210/library_600x900.jpg"
-},
 "crazy-cars": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/454180/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/454180/header.jpg"
 },
 "crazy-cattle-3-d": {
 "file": "assets/covers/crazy-cattle-3-d.webp",
@@ -2368,7 +2352,7 @@
 "creeper-world-2": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/422920/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/422920/header.jpg"
 },
 "creepy-night-funkin": {
 "file": "assets/covers/creepy-night-funkin.webp",
@@ -2611,9 +2595,9 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1647160/library_600x900.jpg"
 },
 "deepsleep": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4155700/library_600x900.jpg"
+"file": "assets/covers/deepsleep.webp",
+"from": "bing",
+"kind": "local"
 },
 "defend-your-castle": {
 "from": "steam",
@@ -2631,9 +2615,10 @@
 "kind": "local"
 },
 "defender": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4869280/library_600x900.jpg"
+"file": "assets/covers/defender.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "deltarune": {
 "from": "steam",
@@ -2656,9 +2641,10 @@
 "kind": "local"
 },
 "demon-blade": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4927090/library_600x900.jpg"
+"file": "assets/covers/demon-blade.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "demon-bluff": {
 "from": "steam",
@@ -2976,9 +2962,10 @@
 "kind": "local"
 },
 "dragon-quest-v": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/2499860/library_600x900.jpg"
+"file": "assets/covers/dragon-quest-v.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "dragon-warrior-monsters": {
 "file": "assets/covers/dragon-warrior-monsters.webp",
@@ -3026,9 +3013,10 @@
 "kind": "local"
 },
 "drive-mad": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4822600/library_600x900.jpg"
+"file": "assets/covers/drive-mad.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "driven-wild": {
 "file": "assets/covers/driven-wild.webp",
@@ -3121,9 +3109,10 @@
 "kind": "local"
 },
 "dumpling": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4799870/library_600x900.jpg"
+"file": "assets/covers/dumpling.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "dune-buggy": {
 "file": "assets/covers/dune-buggy.webp",
@@ -3136,9 +3125,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2895110/library_600x900.jpg"
 },
 "dungeon-raid": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3656720/library_600x900.jpg"
+"file": "assets/covers/dungeon-raid.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "dungeonsanddegenerategamblers": {
 "file": "assets/covers/dungeonsanddegenerategamblers.webp",
@@ -3351,9 +3341,10 @@
 "kind": "local"
 },
 "enduro": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4734250/library_600x900.jpg"
+"file": "assets/covers/enduro.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "epic-battle-fantasy-5": {
 "from": "steam",
@@ -3361,9 +3352,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/432350/library_600x900.jpg"
 },
 "escalating-duel": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3710490/library_600x900.jpg"
+"file": "assets/covers/escalating-duel.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "escape-road-2": {
 "file": "assets/covers/escape-road-2.webp",
@@ -3408,7 +3400,7 @@
 "evil-glitch": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/619890/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/619890/header.jpg"
 },
 "evolution": {
 "file": "assets/covers/evolution.webp",
@@ -3518,7 +3510,7 @@
 "fancy-pants-adventure": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/2168130/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/2168130/header.jpg"
 },
 "fancy-pants-adventure-2": {
 "file": "assets/covers/fancy-pants-adventure-2.webp",
@@ -3581,9 +3573,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1671340/library_600x900.jpg"
 },
 "feed-the-void": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4476320/library_600x900.jpg"
+"file": "assets/covers/feed-the-void.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "feed-us-2": {
 "file": "assets/covers/feed-us-2.webp",
@@ -3766,9 +3759,10 @@
 "kind": "local"
 },
 "final-fantasy-tactics": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1004640/library_600x900.jpg"
+"file": "assets/covers/final-fantasy-tactics.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "final-fantasy-vi": {
 "from": "steam",
@@ -3791,9 +3785,10 @@
 "kind": "local"
 },
 "finalfantasy-vii": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4354570/library_600x900.jpg"
+"file": "assets/covers/finalfantasy-vii.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "finalfantasy-viitheothertetrr": {
 "file": "assets/covers/finalfantasy-viitheothertetrr.webp",
@@ -4776,14 +4771,16 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2472180/library_600x900.jpg"
 },
 "general-chaos": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4228230/library_600x900.jpg"
+"file": "assets/covers/general-chaos.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "generic-fighter-maybe": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3925750/library_600x900.jpg"
+"file": "assets/covers/generic-fighter-maybe.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "geometry-dash-lite": {
 "file": "assets/covers/geometry-dash-lite.webp",
@@ -4816,9 +4813,10 @@
 "kind": "local"
 },
 "get-yoked": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3594610/library_600x900.jpg"
+"file": "assets/covers/get-yoked.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "getaway-shootout": {
 "file": "assets/covers/getaway-shootout.webp",
@@ -4845,12 +4843,6 @@
 "from": "cache",
 "kind": "local"
 },
-"global-strike-cs-1-6": {
-"file": "assets/covers/global-strike-cs-1-6.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
-},
 "glory-hunters": {
 "from": "steam",
 "kind": "hot",
@@ -4867,9 +4859,10 @@
 "kind": "local"
 },
 "gobble": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4865300/library_600x900.jpg"
+"file": "assets/covers/gobble.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "going-balls": {
 "file": "assets/covers/going-balls.webp",
@@ -5072,9 +5065,9 @@
 "kind": "local"
 },
 "grow-your-garden": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4039960/library_600x900.jpg"
+"file": "assets/covers/grow-your-garden.webp",
+"from": "bing",
+"kind": "local"
 },
 "growden-io": {
 "file": "assets/covers/growden-io.webp",
@@ -5087,15 +5080,10 @@
 "kind": "local"
 },
 "gta": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3482260/library_600x900.jpg"
-},
-"gta-3": {
-"file": "assets/covers/gta-3.webp",
+"file": "assets/covers/gta.webp",
 "from": "bing",
 "kind": "local",
-"score": 75
+"score": 40
 },
 "gta-mods": {
 "file": "assets/covers/gta-mods.webp",
@@ -5155,7 +5143,7 @@
 "gun-smoke": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/991130/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/991130/header.jpg"
 },
 "guncho": {
 "from": "steam",
@@ -5218,9 +5206,10 @@
 "kind": "local"
 },
 "handshakes": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4942610/library_600x900.jpg"
+"file": "assets/covers/handshakes.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "handsofwar-1": {
 "file": "assets/covers/handsofwar-1.webp",
@@ -5245,7 +5234,7 @@
 "hanger": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/484390/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/484390/header.jpg"
 },
 "hanger-2": {
 "file": "assets/covers/hanger-2.webp",
@@ -5258,9 +5247,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/550010/library_600x900.jpg"
 },
 "hardware-tycoon": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4490710/library_600x900.jpg"
+"file": "assets/covers/hardware-tycoon.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "harold-s-bad-day": {
 "file": "assets/covers/harold-s-bad-day.webp",
@@ -5273,9 +5263,10 @@
 "kind": "local"
 },
 "harvest-moon": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3591180/library_600x900.jpg"
+"file": "assets/covers/harvest-moon.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "harvest-moon-2": {
 "file": "assets/covers/harvest-moon-2.webp",
@@ -5340,7 +5331,7 @@
 "helltaker": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1298590/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1298590/header.jpg"
 },
 "help-no-brakes": {
 "file": "assets/covers/help-no-brakes.webp",
@@ -5373,9 +5364,10 @@
 "kind": "local"
 },
 "heretic": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3286930/library_600x900.jpg"
+"file": "assets/covers/heretic.webp",
+"from": "bing",
+"kind": "local",
+"score": 70
 },
 "hero-3-flying-robot": {
 "file": "assets/covers/hero-3-flying-robot.webp",
@@ -5398,9 +5390,10 @@
 "kind": "local"
 },
 "high-stakes": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5054680/library_600x900.jpg"
+"file": "assets/covers/high-stakes.webp",
+"from": "bing",
+"kind": "local",
+"score": 75
 },
 "highway-racer": {
 "file": "assets/covers/highway-racer.webp",
@@ -5588,9 +5581,10 @@
 "kind": "local"
 },
 "ice-dodo": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3782170/library_600x900.jpg"
+"file": "assets/covers/ice-dodo.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "ice-fishing": {
 "from": "steam",
@@ -5648,9 +5642,10 @@
 "kind": "local"
 },
 "indian-truck-simulator": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5346150/library_600x900.jpg"
+"file": "assets/covers/indian-truck-simulator.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "indiantrucksimiulator": {
 "file": "assets/covers/indiantrucksimiulator.webp",
@@ -5678,9 +5673,10 @@
 "kind": "local"
 },
 "innkeeper": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3815170/library_600x900.jpg"
+"file": "assets/covers/innkeeper.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "inscryption": {
 "from": "steam",
@@ -5699,9 +5695,8 @@
 },
 "interactive-buddy": {
 "file": "assets/covers/interactive-buddy.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
+"from": "cache",
+"kind": "local"
 },
 "into-ruins": {
 "file": "assets/covers/into-ruins.webp",
@@ -5731,7 +5726,7 @@
 "intrusion": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/214970/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/214970/header.jpg"
 },
 "iq-ball": {
 "file": "assets/covers/iq-ball.webp",
@@ -5764,9 +5759,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2386250/library_600x900.jpg"
 },
 "jacksmith": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3580580/library_600x900.jpg"
+"file": "assets/covers/jacksmith.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "jailbreak-obby": {
 "file": "assets/covers/jailbreak-obby.webp",
@@ -6066,7 +6062,7 @@
 "kitten-cannon": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/550820/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/550820/header.jpg"
 },
 "kittytoy": {
 "file": "assets/covers/kittytoy.webp",
@@ -6074,14 +6070,15 @@
 "kind": "local"
 },
 "klifur": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4573210/library_600x900.jpg"
+"file": "assets/covers/klifur.webp",
+"from": "bing",
+"kind": "local"
 },
 "knifehit": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/823160/library_600x900.jpg"
+"file": "assets/covers/knifehit.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "knightmare-tower": {
 "from": "steam",
@@ -6214,9 +6211,10 @@
 "kind": "local"
 },
 "let-it-consume": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4161970/library_600x900.jpg"
+"file": "assets/covers/let-it-consume.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "lethal-company": {
 "from": "steam",
@@ -6276,7 +6274,7 @@
 "lobotomy-corporation": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/896000/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/896000/header.jpg"
 },
 "lock-the-door": {
 "file": "assets/covers/lock-the-door.webp",
@@ -6340,7 +6338,7 @@
 },
 "madalin-stunt-cars-3": {
 "file": "assets/covers/madalin-stunt-cars-3.webp",
-"from": "official",
+"from": "cache",
 "kind": "local"
 },
 "madalin-stunt-cars-multiplayer": {
@@ -6369,9 +6367,10 @@
 "kind": "local"
 },
 "madden-nfl": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4113760/library_600x900.jpg"
+"file": "assets/covers/madden-nfl.webp",
+"from": "bing",
+"kind": "local",
+"score": 75
 },
 "madden-nfl-2000": {
 "file": "assets/covers/madden-nfl-2000.webp",
@@ -6671,7 +6670,7 @@
 "maui-mallard-in-cold-shadow": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/987410/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/987410/header.jpg"
 },
 "max-payne": {
 "from": "steam",
@@ -6706,37 +6705,37 @@
 "mega-man-2": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484330/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484330/header.jpg"
 },
 "mega-man-3": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484350/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484350/header.jpg"
 },
 "mega-man-4": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484370/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484370/header.jpg"
 },
 "mega-man-5": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484380/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484380/header.jpg"
 },
 "mega-man-6": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484390/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484390/header.jpg"
 },
 "mega-man-7": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484410/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484410/header.jpg"
 },
 "mega-man-8": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484420/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1484420/header.jpg"
 },
 "mega-man-battle-chip-challenge": {
 "file": "assets/covers/mega-man-battle-chip-challenge.webp",
@@ -6811,37 +6810,37 @@
 "mega-man-x2": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/906632/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/906632/header.jpg"
 },
 "mega-man-x3": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/906633/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/906633/header.jpg"
 },
 "mega-man-x4": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/906634/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/906634/header.jpg"
 },
 "mega-man-x5": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/906635/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/906635/header.jpg"
 },
 "mega-man-x6": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/906636/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/906636/header.jpg"
 },
 "mega-man-zero": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1263290/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1263290/header.jpg"
 },
 "mega-man-zx": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1263270/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1263270/header.jpg"
 },
 "mega-miner": {
 "file": "assets/covers/mega-miner.webp",
@@ -6849,9 +6848,10 @@
 "kind": "local"
 },
 "megachess": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3645080/library_600x900.jpg"
+"file": "assets/covers/megachess.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "megaman-and-bass-challenger-from-the-future": {
 "file": "assets/covers/megaman-and-bass-challenger-from-the-future.webp",
@@ -6899,9 +6899,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2131680/library_600x900.jpg"
 },
 "metal-gear-solid": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3859630/library_600x900.jpg"
+"file": "assets/covers/metal-gear-solid.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "metal-slug": {
 "from": "steam",
@@ -6934,9 +6935,10 @@
 "kind": "local"
 },
 "metroid": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4684250/library_600x900.jpg"
+"file": "assets/covers/metroid.webp",
+"from": "bing",
+"kind": "local",
+"score": 75
 },
 "metroid-2": {
 "file": "assets/covers/metroid-2.webp",
@@ -7019,9 +7021,10 @@
 "kind": "local"
 },
 "mindscape": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4937350/library_600x900.jpg"
+"file": "assets/covers/mindscape.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "mindwave": {
 "from": "steam",
@@ -7165,9 +7168,8 @@
 },
 "mo64-1": {
 "file": "assets/covers/mo64-1.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
+"from": "cache",
+"kind": "local"
 },
 "mobcontrolhtml5": {
 "file": "assets/covers/mobcontrolhtml5.webp",
@@ -7317,7 +7319,7 @@
 "multitask": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/879290/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/879290/header.jpg"
 },
 "murder": {
 "from": "steam",
@@ -7442,7 +7444,7 @@
 "needy-streamer-overload": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3412770/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/3412770/header.jpg"
 },
 "neon-blaster": {
 "file": "assets/covers/neon-blaster.webp",
@@ -7760,9 +7762,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/3281050/library_600x900.jpg"
 },
 "opposite-day": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3572130/library_600x900.jpg"
+"file": "assets/covers/opposite-day.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "opposumcountry": {
 "file": "assets/covers/opposumcountry.webp",
@@ -7800,9 +7803,9 @@
 "kind": "local"
 },
 "outhold": {
-"from": "steam",
+"from": "itunes",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3767740/library_600x900.jpg"
+"url": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/e3/b3/45e3b365-fdb2-8e8e-74e4-11185834b025/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg"
 },
 "outrun-arcade": {
 "file": "assets/covers/outrun-arcade.webp",
@@ -8044,11 +8047,6 @@
 "from": "cache",
 "kind": "local"
 },
-"peak": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3527290/library_600x900.jpg"
-},
 "peaks-of-yore": {
 "from": "steam",
 "kind": "hot",
@@ -8085,9 +8083,10 @@
 "kind": "local"
 },
 "pereelous": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3719900/library_600x900.jpg"
+"file": "assets/covers/pereelous.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "perfect-dark": {
 "file": "assets/covers/perfect-dark.webp",
@@ -8100,9 +8099,10 @@
 "kind": "local"
 },
 "persona": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/2649560/library_600x900.jpg"
+"file": "assets/covers/persona.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "persona2": {
 "file": "assets/covers/persona2.webp",
@@ -8232,7 +8232,7 @@
 "pitfall": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/464900/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/464900/header.jpg"
 },
 "pitof100trials": {
 "file": "assets/covers/pitof100trials.webp",
@@ -8272,7 +8272,7 @@
 "pixel-warfare": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/530240/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/530240/header.jpg"
 },
 "pizza-tower": {
 "from": "steam",
@@ -8298,12 +8298,6 @@
 "file": "assets/covers/plantsvszombiesnds.webp",
 "from": "cache",
 "kind": "local"
-},
-"plauge-inc": {
-"file": "assets/covers/plauge-inc.webp",
-"from": "bing",
-"kind": "local",
-"score": 70
 },
 "plazma-burst": {
 "file": "assets/covers/plazma-burst.webp",
@@ -8997,9 +8991,8 @@
 },
 "pokemonvolume1": {
 "file": "assets/covers/pokemonvolume1.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
+"from": "cache",
+"kind": "local"
 },
 "pokemonvolume2": {
 "file": "assets/covers/pokemonvolume2.webp",
@@ -9247,9 +9240,10 @@
 "kind": "local"
 },
 "pyrotoad": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4002180/library_600x900.jpg"
+"file": "assets/covers/pyrotoad.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "q-bert": {
 "file": "assets/covers/q-bert.webp",
@@ -9334,7 +9328,7 @@
 "ragdoll-runners": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/404820/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/404820/header.jpg"
 },
 "ragdoll-soccer": {
 "file": "assets/covers/ragdoll-soccer.webp",
@@ -9367,7 +9361,10 @@
 "kind": "local"
 },
 "raldi-s-crackhouse": {
-"kind": "none"
+"file": "assets/covers/raldi-s-crackhouse.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "ravenbase": {
 "file": "assets/covers/ravenbase.webp",
@@ -9390,14 +9387,16 @@
 "kind": "local"
 },
 "rayman": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4084710/library_600x900.jpg"
+"file": "assets/covers/rayman.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "raze": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4279790/library_600x900.jpg"
+"file": "assets/covers/raze.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "raze-2": {
 "file": "assets/covers/raze-2.webp",
@@ -9430,14 +9429,16 @@
 "kind": "local"
 },
 "recoil": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4639950/library_600x900.jpg"
+"file": "assets/covers/recoil.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "red-ball": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4221220/library_600x900.jpg"
+"file": "assets/covers/red-ball.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "red-ball-2": {
 "file": "assets/covers/red-ball-2.webp",
@@ -9482,7 +9483,7 @@
 "red-vs-blue": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/627290/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/627290/header.jpg"
 },
 "red-vs-blue-war": {
 "file": "assets/covers/red-vs-blue-war.webp",
@@ -9662,7 +9663,7 @@
 "ridge-racer": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/202310/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/202310/header.jpg"
 },
 "rimworld": {
 "from": "steam",
@@ -9721,7 +9722,7 @@
 },
 "rocket-soccer": {
 "file": "assets/covers/rocket-soccer.webp",
-"from": "official",
+"from": "cache",
 "kind": "local"
 },
 "rocket-soccer-derby": {
@@ -9810,9 +9811,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2055510/library_600x900.jpg"
 },
 "roulette-hero": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3371510/library_600x900.jpg"
+"file": "assets/covers/roulette-hero.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "roulette-knight": {
 "file": "assets/covers/roulette-knight.webp",
@@ -9880,9 +9882,10 @@
 "kind": "local"
 },
 "sandboxels": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3664820/library_600x900.jpg"
+"file": "assets/covers/sandboxels.webp",
+"from": "bing",
+"kind": "local",
+"score": 75
 },
 "sands-of-the-coliseum": {
 "file": "assets/covers/sands-of-the-coliseum.webp",
@@ -9964,11 +9967,6 @@
 "from": "cache",
 "kind": "local"
 },
-"scp-containment-breach": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/2178380/library_600x900.jpg"
-},
 "scrap-metal-3": {
 "file": "assets/covers/scrap-metal-3.webp",
 "from": "cache",
@@ -9987,7 +9985,7 @@
 "scribblenauts": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/218680/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/218680/header.jpg"
 },
 "scuba-bear": {
 "file": "assets/covers/scuba-bear.webp",
@@ -10085,14 +10083,16 @@
 "kind": "local"
 },
 "shift-3": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5312510/library_600x900.jpg"
+"file": "assets/covers/shift-3.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "shift-at-midnight": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3722330/library_600x900.jpg"
+"file": "assets/covers/shift-at-midnight.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "shin-megami-tensei-devil-survivor": {
 "file": "assets/covers/shin-megami-tensei-devil-survivor.webp",
@@ -10127,7 +10127,7 @@
 "short-life": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/893570/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/893570/header.jpg"
 },
 "shot-out-4": {
 "file": "assets/covers/shot-out-4.webp",
@@ -10155,9 +10155,10 @@
 "kind": "local"
 },
 "side-effects": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3799100/library_600x900.jpg"
+"file": "assets/covers/side-effects.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "side-pocket": {
 "file": "assets/covers/side-pocket.webp",
@@ -10190,9 +10191,10 @@
 "kind": "local"
 },
 "silenthill": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1636440/library_600x900.jpg"
+"file": "assets/covers/silenthill.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "silenthillalt": {
 "file": "assets/covers/silenthillalt.webp",
@@ -10317,7 +10319,7 @@
 "slither": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/931090/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/931090/header.jpg"
 },
 "slither-io": {
 "file": "assets/covers/slither-io.webp",
@@ -10387,12 +10389,12 @@
 "snail-bob": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/349760/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/349760/header.jpg"
 },
 "snail-bob-2": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/349760/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/349760/header.jpg"
 },
 "snail-bob-3": {
 "file": "assets/covers/snail-bob-3.webp",
@@ -10437,7 +10439,7 @@
 "snakelike": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/845110/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/845110/header.jpg"
 },
 "sniper-shot": {
 "from": "itunes",
@@ -10490,9 +10492,10 @@
 "kind": "local"
 },
 "snowdrift": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4269950/library_600x900.jpg"
+"file": "assets/covers/snowdrift.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "snowrid": {
 "file": "assets/covers/snowrid.webp",
@@ -10530,9 +10533,10 @@
 "kind": "local"
 },
 "solar-sandbox": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4307880/library_600x900.jpg"
+"file": "assets/covers/solar-sandbox.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "solar-smash": {
 "from": "steam",
@@ -10552,7 +10556,7 @@
 "solstice": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/528160/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/528160/header.jpg"
 },
 "somari-64": {
 "file": "assets/covers/somari-64.webp",
@@ -10952,7 +10956,7 @@
 "sprinter": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/442260/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/442260/header.jpg"
 },
 "sprunked": {
 "file": "assets/covers/sprunked.webp",
@@ -11022,7 +11026,7 @@
 "star-raiders": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/9970/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/9970/header.jpg"
 },
 "stardew-valley": {
 "from": "steam",
@@ -11082,7 +11086,7 @@
 "steel-empire": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/563260/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/563260/header.jpg"
 },
 "steel-surge-revolution": {
 "file": "assets/covers/steel-surge-revolution.webp",
@@ -11127,7 +11131,7 @@
 "stick-war": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/815360/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/815360/header.jpg"
 },
 "stick-war-2": {
 "file": "assets/covers/stick-war-2.webp",
@@ -11135,9 +11139,10 @@
 "kind": "local"
 },
 "stick-with-it": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3984960/library_600x900.jpg"
+"file": "assets/covers/stick-with-it.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "stickjet-challenge": {
 "file": "assets/covers/stickjet-challenge.webp",
@@ -11180,9 +11185,10 @@
 "kind": "local"
 },
 "storm-the-house": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4037530/library_600x900.jpg"
+"file": "assets/covers/storm-the-house.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "storm-the-house-2": {
 "file": "assets/covers/storm-the-house-2.webp",
@@ -11410,9 +11416,10 @@
 "kind": "local"
 },
 "super-bomberman": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3756010/library_600x900.jpg"
+"file": "assets/covers/super-bomberman.webp",
+"from": "bing",
+"kind": "local",
+"score": 105
 },
 "super-bomberman-2": {
 "file": "assets/covers/super-bomberman-2.webp",
@@ -11855,9 +11862,10 @@
 "kind": "local"
 },
 "sushi-cat": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3620940/library_600x900.jpg"
+"file": "assets/covers/sushi-cat.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "sushi-unroll": {
 "file": "assets/covers/sushi-unroll.webp",
@@ -11870,9 +11878,10 @@
 "kind": "local"
 },
 "swerve": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4974700/library_600x900.jpg"
+"file": "assets/covers/swerve.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "switchblade": {
 "from": "steam",
@@ -11920,9 +11929,10 @@
 "kind": "local"
 },
 "taco-stand": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4307580/library_600x900.jpg"
+"file": "assets/covers/taco-stand.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "tag": {
 "file": "assets/covers/tag.webp",
@@ -11950,9 +11960,10 @@
 "kind": "local"
 },
 "takeover": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4423270/library_600x900.jpg"
+"file": "assets/covers/takeover.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "talking-hippo": {
 "from": "itunes",
@@ -11965,9 +11976,10 @@
 "kind": "local"
 },
 "tallmanrun": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3819320/library_600x900.jpg"
+"file": "assets/covers/tallmanrun.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "tank-pixel": {
 "file": "assets/covers/tank-pixel.webp",
@@ -12000,9 +12012,10 @@
 "kind": "local"
 },
 "tapper": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4171080/library_600x900.jpg"
+"file": "assets/covers/tapper.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "tasty-planet": {
 "from": "steam",
@@ -12070,9 +12083,10 @@
 "kind": "local"
 },
 "tempoverdose": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3756410/library_600x900.jpg"
+"file": "assets/covers/tempoverdose.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "terra": {
 "file": "assets/covers/terra.webp",
@@ -12145,9 +12159,10 @@
 "kind": "local"
 },
 "the-deadseat": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3667230/library_600x900.jpg"
+"file": "assets/covers/the-deadseat.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "the-deepest-sleep": {
 "file": "assets/covers/the-deepest-sleep.webp",
@@ -12182,7 +12197,7 @@
 "the-impossible-game": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/251630/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/251630/header.jpg"
 },
 "the-impossible-quiz": {
 "file": "assets/covers/the-impossible-quiz.webp",
@@ -12202,7 +12217,7 @@
 "the-jungle-book": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1636800/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1636800/header.jpg"
 },
 "the-last-stand": {
 "from": "steam",
@@ -12249,16 +12264,10 @@
 "from": "cache",
 "kind": "local"
 },
-"the-man-from-the-window-2": {
-"file": "assets/covers/the-man-from-the-window-2.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
-},
 "the-message-from-deep-space": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4080030/library_600x900.jpg"
+"file": "assets/covers/the-message-from-deep-space.webp",
+"from": "bing",
+"kind": "local"
 },
 "the-oregon-trail": {
 "from": "steam",
@@ -12288,7 +12297,7 @@
 "the-visitor": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/457580/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/457580/header.jpg"
 },
 "thelaststandunioncity-1": {
 "file": "assets/covers/thelaststandunioncity-1.webp",
@@ -12367,9 +12376,8 @@
 },
 "time-shooter-3-swat": {
 "file": "assets/covers/time-shooter-3-swat.webp",
-"from": "bing",
-"kind": "local",
-"score": 40
+"from": "cache",
+"kind": "local"
 },
 "timewarriors": {
 "file": "assets/covers/timewarriors.webp",
@@ -12606,11 +12614,6 @@
 "from": "cache",
 "kind": "local"
 },
-"trombone-champ": {
-"file": "assets/covers/trombone-champ.webp",
-"from": "official",
-"kind": "local"
-},
 "tsuzukimaze": {
 "file": "assets/covers/tsuzukimaze.webp",
 "from": "cache",
@@ -12647,9 +12650,10 @@
 "kind": "local"
 },
 "twin-shot": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3618520/library_600x900.jpg"
+"file": "assets/covers/twin-shot.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "twinshot-1": {
 "file": "assets/covers/twinshot-1.webp",
@@ -12717,9 +12721,7 @@
 "kind": "local"
 },
 "ultrapool": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4195110/library_600x900.jpg"
+"kind": "none"
 },
 "um-jammer-lammy": {
 "file": "assets/covers/um-jammer-lammy.webp",
@@ -12777,9 +12779,10 @@
 "kind": "local"
 },
 "untime": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4632070/library_600x900.jpg"
+"file": "assets/covers/untime.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "untitled-goose-game": {
 "from": "steam",
@@ -12817,9 +12820,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1794680/library_600x900.jpg"
 },
 "vanguard": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3471800/library_600x900.jpg"
+"file": "assets/covers/vanguard.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "vapor-trails": {
 "from": "steam",
@@ -12827,9 +12831,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/2801630/library_600x900.jpg"
 },
 "vena": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4165740/library_600x900.jpg"
+"file": "assets/covers/vena.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "vex": {
 "file": "assets/covers/vex.webp",
@@ -12894,12 +12899,13 @@
 "villager": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/863900/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/863900/header.jpg"
 },
 "vincent-mansion-of-the-dead": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/4103720/library_600x900.jpg"
+"file": "assets/covers/vincent-mansion-of-the-dead.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "volley-random": {
 "file": "assets/covers/volley-random.webp",
@@ -13014,7 +13020,7 @@
 "we-become-what-we-behold": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/1103210/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/1103210/header.jpg"
 },
 "webfishing": {
 "from": "steam",
@@ -13054,7 +13060,7 @@
 "wheely": {
 "from": "steam",
 "kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/548330/library_600x900.jpg"
+"url": "https://cdn.akamai.steamstatic.com/steam/apps/548330/header.jpg"
 },
 "wheely-2": {
 "file": "assets/covers/wheely-2.webp",
@@ -13152,9 +13158,10 @@
 "kind": "local"
 },
 "woodworm": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/3404590/library_600x900.jpg"
+"file": "assets/covers/woodworm.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "wordle-unlimited": {
 "file": "assets/covers/wordle-unlimited.webp",
@@ -13312,9 +13319,10 @@
 "url": "https://cdn.akamai.steamstatic.com/steam/apps/1175640/library_600x900.jpg"
 },
 "zombie-rush": {
-"from": "steam",
-"kind": "hot",
-"url": "https://cdn.akamai.steamstatic.com/steam/apps/5002500/library_600x900.jpg"
+"file": "assets/covers/zombie-rush.webp",
+"from": "bing",
+"kind": "local",
+"score": 40
 },
 "zombies-ate-my-neighbors": {
 "from": "steam",
