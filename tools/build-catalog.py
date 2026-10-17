@@ -37,7 +37,11 @@ DEFAULT_CATEGORY = "arcade"
 
 # When one game exists in several sources the best channel wins, because it is
 # the one most likely to still be serving next month.
-SOURCE_RANK = {"wasm": 0, "port": 1, "offline": 2, "web": 3, "flash": 4}
+# Official is last on purpose. Its fallback URL is a player page on the original
+# site that itself iframes the real game, so it is a proxy - correct for the few
+# games nothing else carries, wrong as a replacement for a direct host.
+SOURCE_RANK = {"wasm": 0, "port": 1, "offline": 2, "web": 3, "flash": 4,
+               "official": 5}
 
 RULES = [
     ("sports", ["soccer", "football", "basketball", "tennis", "golf", "boxing",
@@ -374,12 +378,104 @@ def source_wasmrip():
     return out
 
 
+# Games the original site published after this one was forked from it. Reading
+# it also means the next time they add something, a rebuild picks it up.
+OFFICIAL_SITE = "https://simplegames-lol.github.io"
+_SKIP_NAME = re.compile(r"unavailable|not working|down|broken", re.I)
+_URL = re.compile(r"https?://[^\s\"'<>)]+")
+# Never treat a stylesheet, script, image or tracker as "the game". Picking one
+# silently produces a card that loads an ad script in the player - worse than
+# showing nothing at all.
+_ASSET = re.compile(
+    r"\.(js|mjs|css|png|jpe?g|gif|svg|webp|ico|woff2?|ttf|mp4|mp3|wav|json)(\?|#|$)"
+    r"|analytics|googletagmanager|doubleclick|adservice|/ads?/|adserver|"
+    r"adsbygoogle|adsystem|advertis|tracking|pixel|beacon|statistics",
+    re.I)
+# hosts that only ever serve a CDN's own asset files, never a playable page
+_DEAD_HOST = re.compile(r"(fonts\.googleapis|fonts\.gstatic|cdn\.jsdelivr|"
+                        r"unpkg\.com|code\.jquery|cdnjs|bootstrapcdn|"
+                        r"google-analytics|googletagmanager)", re.I)
+# a directory or index page on a real game host is what we are after
+_HOST_HINT = re.compile(
+    r"(githack\.com|githubusercontent\.com|github\.io|gitlab\.io|itch\.io|"
+    r"poki\.com|gameflare\.com|crazygames\.com|html5games\.com|"
+    r"/game/|/index\.html|/play\.html|/$)", re.I)
+
+
+def official_game_url(slug):
+    """The original site embeds each game in an iframe. Some point straight at
+    the game host; the rest load a local player page that names the host.
+
+    When the player page is a wrapper rather than a redirect - a Unity WebGL
+    loader, say, which has no standalone index.html anywhere - its own URL is
+    the only page that actually boots the game, so that is what we keep."""
+    try:
+        page = get(f"{OFFICIAL_SITE}/{slug}/")
+    except Exception:
+        return None
+    m = re.search(r"<iframe[^>]+src=[\"']([^\"']+)", page, re.I)
+    if not m:
+        return None
+    src = m.group(1).strip()
+    if src.startswith(("http://", "https://")):
+        return None if _ASSET.search(src) else src
+    if src.startswith(("about:", "data:", "javascript:")):
+        return None
+    player_url = f"{OFFICIAL_SITE}" \
+        f"{src if src.startswith('/') else '/' + src}"
+    try:
+        player = get(player_url)
+    except Exception:
+        return None
+    cands = [c.rstrip("\\,;'\"") for c in _URL.findall(player)]
+    # a self-contained game directory beats any single file inside it
+    for cand in cands:
+        if _DEAD_HOST.search(cand) or _ASSET.search(cand):
+            continue
+        if _HOST_HINT.search(cand):
+            return cand
+    # otherwise the loader page itself is the game
+    return player_url
+
+
+def source_official():
+    html = get(f"{OFFICIAL_SITE}/")
+    own = (ROOT / "index.html").read_text(encoding="utf-8", errors="replace")
+    have = {norm_title(m.group(1)) for m in re.finditer(
+        r'<article class="game-card">.*?<h2><a[^>]*>([^<]+)</a>', own, re.S)}
+    out = []
+    for blk in re.finditer(r'<article class="game-card">.*?</article>', html, re.S):
+        text = blk.group(0)
+        h = re.search(r"<h2><a[^>]*>([^<]+)</a>", text)
+        l = re.search(r'href="([^"]+)"', text)
+        if not h or not l:
+            continue
+        name = clean_title(h.group(1))
+        if norm_title(name) in have or _SKIP_NAME.search(name):
+            continue
+        if is_junk_title(name):
+            continue
+        slug = l.group(1).strip("/")
+        if not slug or "/" in slug:
+            continue
+        url = official_game_url(slug)
+        if not url:
+            print(f"  ! official/{slug}: could not resolve a game URL",
+                  file=sys.stderr)
+            continue
+        out.append({"name": name, "url": url, "source": "official",
+                    "default": "action"})
+    return out
+
+
 SOURCES = [
     ("wasm.rip", source_wasmrip),
     ("web-ports", source_web_ports),
     ("genizy", source_genizy),
     ("offline", source_offline_pack),
     ("ugs", source_ugs),
+    # last, so it only spends a request on titles nothing else claimed
+    ("official", source_official),
 ]
 
 
@@ -402,22 +498,53 @@ def fetch_cover(slug, url):
     return f"assets/covers/{slug}.{ext}"
 
 
+def load_cover_map():
+    """slug -> cover reference written by tools/fetch-covers.py."""
+    path = HERE / "covers-map.json"
+    if not path.exists():
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
 def resolve_covers(rows):
-    """wasm.rip ships its own art; repo-backed games get GitHub's social image.
-    Everything else keeps the generated tile."""
+    """Real art first: wasm.rip ships its own, fetch-covers.py resolves the rest
+    into assets/covers or onto a permanent CDN. GitHub's social image is the
+    last resort for a repo-backed game, and only a generated tile worse than
+    that."""
+    cmap = load_cover_map()
+    mirrored = hot = 0
     todo = []
     for r in rows:
         if r["cover"]:
+            mirrored += 1                       # wasm.rip art
+            continue
+        entry = cmap.get(r["slug"]) or {}
+        if entry.get("kind") in ("local", "cache") and entry.get("file"):
+            # only trust the entry if the bytes are actually on disk - a stale
+            # map entry would otherwise ship a cover path that 404s
+            if (ROOT / entry["file"]).exists():
+                r["cover"] = entry["file"]
+                mirrored += 1
+                continue
+        elif entry.get("kind") == "hot" and entry.get("url"):
+            r["cover"] = entry["url"]
+            hot += 1
             continue
         if r.get("repo"):
+            # only worth mirroring when nothing better resolved for it
             r["cover"] = f"https://opengraph.githubassets.com/1/{r['repo']}"
             todo.append(r)
-    print(f"  mirroring {len(todo)} GitHub social covers...")
-    with cf.ThreadPoolExecutor(6) as ex:
-        list(ex.map(lambda r: r.update(
-            cover=fetch_cover(r["slug"], r["cover"]) or ""), todo))
+    if todo:
+        print(f"  mirroring {len(todo)} GitHub social covers (fallback)...")
+        with cf.ThreadPoolExecutor(6) as ex:
+            list(ex.map(lambda r: r.update(
+                cover=fetch_cover(r["slug"], r["cover"]) or ""), todo))
     have = sum(1 for r in rows if r["cover"])
-    print(f"  covers: {have}/{len(rows)} real")
+    print(f"  covers: {have}/{len(rows)} real  "
+          f"(mirrored {mirrored}, hotlinked {hot})")
 
 
 def prune_covers(rows):
